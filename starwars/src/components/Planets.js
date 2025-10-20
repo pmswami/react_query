@@ -11,8 +11,14 @@ const Planets = () => {
     const {data, status} = useQuery({
     queryKey: ['planets'],
     queryFn: fetchPlanets,
+    staleTime: 5000,
+    gcTime: 1,
+    // onSuccess: () => {
+    //     console.log('Fetched successfully:');
+    //     return    
+    // },
     })
-    console.log(data);
+    // console.log(data);
     
     return (
         <div>

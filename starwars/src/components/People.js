@@ -12,11 +12,11 @@ const People = () => {
     queryKey: ['people'],
     queryFn: fetchPeople,
     })
-    console.log(data);
+    // console.log(data);
     
     return (
         <div>
-            <h1>Planets</h1>
+            <h1>People</h1>
             {status ==="error" &&
             <div>Error in fetching data</div>
             }

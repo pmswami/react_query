@@ -6,7 +6,7 @@ import People from "./components/People";
 
 function App() {
   const [page, setPage] = useState("planets")
-  console.log(page);
+  // console.log(page);
   
   return (
     <div className="App">
