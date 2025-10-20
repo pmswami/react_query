@@ -1,5 +1,5 @@
 import React from "react";
-import {useQuery} from '@tanstack/react-query'
+import {useQuery, queryKey} from '@tanstack/react-query'
 import Person from "./Person";
 
 const fetchPeople = async ()=>{
